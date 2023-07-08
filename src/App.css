@@ -1,0 +1,134 @@
+body {
+  /* background-color: #333; */
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(20, 20, 20, 0.4)), url(https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.heading{
+  display: flex;
+}
+.heading h1{
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cbd663;
+  /* font-family:sans-serif; */
+}
+
+.App {
+  text-align: center;
+  background-color:#282c34c5;
+  padding: 2%;
+  /* margin-top: 5%; */
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(252, 255, 240, 0.808);
+  border-radius: 5px;
+  border: 1px solid yellow;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input .inp, .btn{
+  width: 40%;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+.input .inp{
+  width: 50%;
+}
+.input .btn{
+  cursor: pointer;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 2px;
+}
+.input .btn:hover{
+  box-shadow: 0 0 3px white;
+}
+.inp{
+  text-align: center;
+  font-weight: bold;
+}
+.clock{
+  /* background-color: #282c34; */
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0 !important;
+}
+.clockHeadParent{
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.clockHeadParent .spn{
+ margin-top: 3%;
+}
+.clockHead{
+  /* background-color: #282c34; */
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.control button{
+  width: 15%;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+.control button:hover{
+  box-shadow: 0 0 5px black;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media screen and (max-width: 673px){
+  .heading{
+    margin-top: 15%;
+  }
+  .App{
+    width: 90%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  } 
+  .clockHeadParent{
+    font-size: 18px;
+  }
+  .input{
+    width: 80%;
+  }
+  .control button{
+    width: 20%;
+  }
+}
